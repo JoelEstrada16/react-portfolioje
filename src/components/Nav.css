@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+.name{
+    font-size: 60px;
+    padding-left: 30px;
+    text-align: start;
+}
+
+#navigation{
+    text-align: end;
+    font-size: 30px;
+    padding-right: 50px;
+    color: white;
+}
+
+.navbar{
+    background-color: #3500D3;
+    height: 200px;
+}
+
+.snap{
+    position: static;
+    padding-top: 30px;
+    height: 100px;
+}
