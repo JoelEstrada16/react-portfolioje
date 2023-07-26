@@ -3,6 +3,7 @@ import Resume from '../pages/resume';
 import Contact from '../pages/Contact';
 import Portfolio from '../pages/Portfolio';
 
+
 const Page = ({ currentPage }) => {
     switch (currentPage) {
         case 'About':

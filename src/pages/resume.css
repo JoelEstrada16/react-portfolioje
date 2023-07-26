@@ -1,0 +1,9 @@
+
+html, body {
+    min-height: 100%;
+}
+
+.backgroundcolor{
+    height: 600px;
+    background-color: #0C0032;
+}

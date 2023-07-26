@@ -1,11 +1,10 @@
-import snapchat from '../images/snapchat.png'
 import './Nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Nav = ({ setCurrentPage, allPages }) => {
     return (
         <>
-    
+
         <nav class="navbar navbar-expand-lg"
         >
   <div class="container-fluid">
@@ -16,19 +15,15 @@ const Nav = ({ setCurrentPage, allPages }) => {
     <div >
       <div class="navbar-nav">
       {allPages.map(page => (
-        <a class="nav-link" id="navigation" href="#" key={page}
+        <button class="nav-link" id="navigation" key={page}
                     onClick={() => {setCurrentPage(page)}}>
-                    {page}</a>
+                    {page}</button>
       ))}
       </div>
     </div>
   </div>
 </nav>
-<footer>
-    <img src={snapchat}
-    class="snap">
-    </img>
-</footer>
+
         </>
     );
 };
