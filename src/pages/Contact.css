@@ -8,3 +8,7 @@ html, body {
     height: 600px;
     background-color: #0C0032;
 }
+
+input{
+    color: black;
+}
