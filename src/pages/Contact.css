@@ -6,9 +6,36 @@ html, body {
 
 .backgroundcolor{
     height: 600px;
-    background-color: #0C0032;
 }
 
-input{
+
+form {
+    width: 100%;
+  }
+  
+
+input {
     color: black;
-}
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 0.25rem;
+    width: 600px;
+    border: 1px solid var(--dark);
+    outline: none;
+    border-radius: 3px;
+    transition: box-shadow 0.2s;
+  }
+  
+  input:focus {
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+  }
+
+  textarea{
+    color: black;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  

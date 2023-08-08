@@ -1,3 +1,4 @@
+import React from 'react';
 import About from '../pages/About';
 import Resume from '../pages/resume';
 import Contact from '../pages/Contact';
@@ -19,5 +20,7 @@ const Page = ({ currentPage }) => {
         
     }
 };
+
+
 
 export default Page;

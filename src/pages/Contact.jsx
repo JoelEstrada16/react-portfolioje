@@ -1,11 +1,12 @@
 import './Contact.css'
 import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/validate';
 
 function Contact() { 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
+    const [formState, setFormState] = useState({ name: '', email: '', message: '', });
     const [errorMessage, setErrorMessage] = useState('');  
+    const { name, email, message } = formState;
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
@@ -34,19 +35,31 @@ const handleChange = (e) => {
 }     
     return (
     <>
-   
+   <section>
+    <form onSubmit={ handleSubmit }>
         <div class="backgroundcolor">
-            <form>
-                <label className='inputs'>
-                    name
-                    <input type="text" name="name"/>
-                    email
-                    <input type="text" name="email"/>
-                    message
-                    <input type="text" name="message"/>
-                </label>
+            <div>
+                <label className='inputs' htmlFor='name'>Name:</label>
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                    </div>
+                    <div>
+                    <label className='inputs' htmlFor='email'>Email Address:</label>
+                    <input type="text" name="email" defaultValue={email} onBlur={handleChange}/>
+                    </div>
+                    <div>
+                    <label className='inputs' htmlFor='message'>Message:</label>
+                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
+                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+                <button type="submit">Submit</button>
+                </div> 
+
             </form>
-        </div>
+    </section>
     </>
     )
 };
