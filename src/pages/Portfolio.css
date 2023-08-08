@@ -9,7 +9,6 @@ html, body {
 
 .container {
     padding: 30px 0px 100px;
-    display: inline;
     margin-left:100px;
     position: relative;
     color: white;
@@ -24,6 +23,8 @@ html, body {
     text-align: center;
     font-style:italic;
 }
+
+
 
 .work{
     margin-top:110px;
@@ -56,6 +57,12 @@ html, body {
 
 }
 
+.Homez{
+    height: 300px;
+    width: 400px;
+    margin-top:20px;
+}
+
 .mood{
   height: 300px;
   width: 400px;
@@ -71,15 +78,11 @@ html, body {
   -o-transition: all 400ms ease-out;
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
-  margin-bottom:-142px;
+  margin-bottom:320px;
 
 }
 
-.workout{
-    text-align: center;
-    margin-top: -300px;
-    margin-left: 300px;
-}
+
 
 .lift{
   margin-left: 450px;
@@ -97,7 +100,7 @@ html, body {
   -o-transition: all 400ms ease-out;
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
-  margin-bottom:-142px;
+  margin-bottom:320px;
 }
 
 .workschedule{
@@ -116,7 +119,7 @@ html, body {
   -o-transition: all 400ms ease-out;
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
-  margin-bottom:-142px;
+  margin-bottom:320px;
 }
 
 .container .mood:hover {
@@ -169,6 +172,7 @@ html, body {
     transform: translateY(250px);
     -webkit-transform: translateY(250px);
   }
+
 
 a:link{
     text-decoration: none;

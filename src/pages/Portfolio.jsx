@@ -2,6 +2,7 @@ import './Portfolio.css'
 import sunset from '../images/sunset.png'
 import workout from '../images/workout.png'
 import workday from '../images/schedule.html.png'
+import homez from '../images/Homez.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -38,11 +39,18 @@ const Portfolio = () => {
                         <p class="wo">WorkDay</p>
                     </nav>
                 </a>
+                </div>
+
+                    <div class="Project3">
+                <a id="homezproject" href="https://homez-a7bb0a2adb47.herokuapp.com/">
+                    <nav id="project">
+                    <img class="Homez" src={homez}></img>
+                    </nav>
+                </a>
 
                 </div>
             </div>
         </div>
-            
         </>
     )
 };
